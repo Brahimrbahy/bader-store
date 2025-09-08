@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+.desktop-bg {
+  display: block;
+}
+
+.mobile-bg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-bg {
+    display: none;
+  }
+  .mobile-bg {
+    display: block;
+  }
+}
