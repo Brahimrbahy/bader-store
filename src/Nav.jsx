@@ -84,7 +84,7 @@ const Nav = () => {
                 <div className="fixed inset-0 z-50 md:hidden">
                     {/* Background overlay */}
                     <div
-                        className="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300"
+                        className="fixed inset-0 bg-black/30 transition-opacity duration-300"
                         onClick={toggleMenu}
                     ></div>
 
