@@ -16,10 +16,52 @@ const Home = () => {
 
             </div>
             <section>
-                <div className="flex items-center justify- my-4">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div className="pt-[112px] px-[48px]">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-around">
                         {/* Left (always left aligned) */}
                         <h2 className="text-[24px] font-normal">Most Popular</h2>
+
+                        {/* Right (moves to right on desktop) */}
+                        <Link
+                            to="/"
+                            className="flex items-center font-normal text-[15px] mt-2 md:mt-0 md:ml-auto"
+                        >
+                            Shop All
+                            <span className="ml-1 bg-gray-300 p-1 rounded-full">
+                                <FaAngleRight />
+                            </span>
+                        </Link>
+                    </div>
+
+
+
+
+                </div>
+                <div className="pt-[112px] px-[48px]">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-around">
+                        {/* Left (always left aligned) */}
+                        <h2 className="text-[24px] font-normal">TRENDING NOW</h2>
+
+                        {/* Right (moves to right on desktop) */}
+                        <Link
+                            to="/"
+                            className="flex items-center font-normal text-[15px] mt-2 md:mt-0 md:ml-auto"
+                        >
+                            Shop All
+                            <span className="ml-1 bg-gray-300 p-1 rounded-full">
+                                <FaAngleRight />
+                            </span>
+                        </Link>
+                    </div>
+
+
+
+
+                </div>
+                <div className="pt-[112px] px-[48px]">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-around">
+                        {/* Left (always left aligned) */}
+                        <h2 className="text-[24px] font-normal">NEW IN DESIGNS</h2>
 
                         {/* Right (moves to right on desktop) */}
                         <Link
@@ -40,7 +82,11 @@ const Home = () => {
 
             </section>
 
-
+            <section>
+                <div>
+                    
+                </div>
+            </section>
 
         </div>
             <div className="fixed bottom-4 right-4 bg-green-500 text-white p-2 rounded-full shadow-lg cursor-pointer">
