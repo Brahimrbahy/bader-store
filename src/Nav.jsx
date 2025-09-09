@@ -14,64 +14,73 @@ const Nav = () => {
     return (
         <>
             {/* Desktop & Mobile Header */}
-            <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-40 lg:py-3 ">
+            <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-40 lg:py-3">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-                    <div className="flex justify-between items-center h-16">
-                        {/* Mobile Menu Button */}
-                        <button
-                            onClick={toggleMenu}
-                            className="md:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
-                        >
-                            <FiMenu className="h-6 w-6" />
-                        </button>
+                    <div className="flex items-center justify-between h-[55px]">
 
-                        {/* Logo */}
-                        <div className="flex-shrink-0">
-                            <div className="font-bold text-gray-900 flex items-center">
-                                <img
-                                    src={Images.logo}
-                                    alt="Logo"
-                                    className="h-10 w-auto object-contain md:h-12"
-                                />
-                            </div>
+                        {/* Mobile Menu + Search */}
+                        <div className="flex gap-3 items-center md:hidden">
+                            <button
+                                onClick={toggleMenu}
+                                className="rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                            >
+                                <FiMenu className="h-6 w-6" />
+                            </button>
+
+                            <button className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-200">
+                                <FiSearch className="h-5 w-5" />
+                            </button>
                         </div>
 
+                        {/* Logo (left) */}
+                        <div className="flex-shrink-0">
+                            <img
+                                src={Images.logo}
+                                alt="Logo"
+                                className="h-[31px] w-auto object-contain md:h-12"
+                            />
+                        </div>
 
-                        {/* Desktop Navigation */}
-                        <div className="hidden md:block">
+                        {/* Desktop Navigation (center) */}
+                        <div className="hidden md:flex flex-1 justify-center">
                             <ul className="flex space-x-8">
                                 <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-sm tracking-wide">
+                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
                                         NEW ARRIVALS
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-sm tracking-wide">
+                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
                                         WOMEN
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-sm tracking-wide">
+                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
                                         MEN
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-sm tracking-wide">
+                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
                                         ACCESSORIES
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        {/* Icons */}
-                        <div className="flex items-center gap-2 ">
-                            <button className="p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-200">
+                        {/* Icons (right) */}
+                        <div className="flex items-center gap-2">
+                            {/* Search (desktop only) */}
+                            <button className="hidden md:block p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
                                 <FiSearch className="h-5 w-5" />
                             </button>
-                            <button className="p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-200">
+
+                            {/* User (desktop only) */}
+                            <button className="hidden md:block p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
                                 <LuUserRound className="h-5 w-5" />
                             </button>
-                            <button className="p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-200 relative">
+
+                            {/* Cart (always visible) */}
+                            <button className="p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md relative">
                                 <FiShoppingCart className="h-5 w-5" />
                             </button>
                         </div>
@@ -88,8 +97,8 @@ const Nav = () => {
                         onClick={toggleMenu}
                     ></div>
 
-                    {/* Cancel Button - Top Outside Menu */}
-                    <div className="fixed top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
+                    {/* Cancel Button */}
+                    <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
                         <button
                             onClick={toggleMenu}
                             className="bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow duration-200"
@@ -98,53 +107,28 @@ const Nav = () => {
                         </button>
                     </div>
 
-
                     {/* Menu Panel */}
-                    <div className="fixed inset-x-0 bottom-0 bg-white rounded-t-3xl shadow-2xl transform transition-transform duration-300 ease-out">
+                    <div className="fixed inset-x-0 bottom-0 bg-white mx-2 mb-2 shadow-2xl transform transition-transform duration-300 ease-out">
                         <div className="px-6 py-8">
-                            {/* Menu Title */}
-                            <h2 className="text-2xl font-bold text-gray-900 mb-8 tracking-wide">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-3 tracking-wide">
                                 NEW ARRIVALS
                             </h2>
 
-                            {/* Menu Items */}
                             <div className="space-y-6">
-                                <div className="border-b border-gray-100 pb-6">
-                                    <a
-                                        href="#"
-                                        className="flex justify-between items-center text-xl font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
-                                        onClick={toggleMenu}
-                                    >
-                                        <span>Women</span>
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div className="border-b border-gray-100 pb-6">
-                                    <a
-                                        href="#"
-                                        className="flex justify-between items-center text-xl font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
-                                        onClick={toggleMenu}
-                                    >
-                                        <span>Men</span>
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div className="border-b border-gray-100 pb-6">
-                                    <a
-                                        href="#"
-                                        className="flex justify-between items-center text-xl font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
-                                        onClick={toggleMenu}
-                                    >
-                                        <span>Accessories</span>
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
+                                {['Women', 'Men', 'Accessories'].map((item) => (
+                                    <div key={item} className="border-b border-gray-100 pb-4">
+                                        <a
+                                            href="#"
+                                            className="flex justify-between items-center text-xl font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                                            onClick={toggleMenu}
+                                        >
+                                            <span>{item}</span>
+                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                ))}
                             </div>
 
                             {/* Social Media Icons */}
@@ -157,7 +141,7 @@ const Nav = () => {
                                 </a>
                             </div>
 
-                            {/* Account Section */}
+                            {/* Account */}
                             <div className="pt-6 border-t border-gray-100">
                                 <button
                                     className="text-lg font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
@@ -170,12 +154,8 @@ const Nav = () => {
                     </div>
                 </div>
             )}
-
         </>
     );
 };
 
 export default Nav;
-
-
-
