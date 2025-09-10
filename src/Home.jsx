@@ -16,7 +16,7 @@ const Home = () => {
 
             </div>
             <section>
-                <div className="pt-[112px] px-[48px]">
+                <div className="pt-[56px] px-[20px] md:pt-[112px] md:px-[48px]">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-around">
                         {/* Left (always left aligned) */}
                         <h2 className="text-[24px] font-normal">Most Popular</h2>
@@ -37,7 +37,7 @@ const Home = () => {
 
 
                 </div>
-                <div className="pt-[112px] px-[48px]">
+                <div className="pt-[56px] px-[20px] md:pt-[112px] md:px-[48px]">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-around">
                         {/* Left (always left aligned) */}
                         <h2 className="text-[24px] font-normal">TRENDING NOW</h2>
@@ -58,7 +58,7 @@ const Home = () => {
 
 
                 </div>
-                <div className="pt-[112px] px-[48px]">
+                <div className="pt-[56px] px-[20px] md:pt-[112px] md:px-[48px]">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-around">
                         {/* Left (always left aligned) */}
                         <h2 className="text-[24px] font-normal">NEW IN DESIGNS</h2>
@@ -84,14 +84,16 @@ const Home = () => {
 
             <section>
                 <div>
-                    
+
                 </div>
             </section>
 
         </div>
-            <div className="fixed bottom-4 right-4 bg-green-500 text-white p-2 rounded-full shadow-lg cursor-pointer">
-                <FaWhatsapp size={24} />
-            </div>
+            <Link to="https://wa.me/212636794596">
+                <div className="fixed bottom-4 right-4 bg-green-500 text-white p-2 rounded-full shadow-lg cursor-pointer">
+                    <FaWhatsapp size={24} />
+                </div>
+            </Link>
 
         </>
     );
