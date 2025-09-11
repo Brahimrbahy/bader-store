@@ -2,10 +2,13 @@ import React from 'react';
 import Images from './constant/Images';
 import { Link } from 'react-router';
 import { FaAngleRight, FaWhatsapp } from 'react-icons/fa';
+import { JsonData } from './json';
+import { MdOutlineShoppingCart } from 'react-icons/md';
 
 const Home = () => {
-    return (
+    const tshirts = JsonData.products["t-shirt"].slice(0, 4);
 
+    return (
 
         <> <div>
             <div>
@@ -32,6 +35,39 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                        {tshirts.map((item, index) => (
+                            <div key={index} className="text-center relative">
+                                {/* Image container with fixed width & height */}
+                                <div className="w-full aspect-square relative">
+                                    <img
+                                        src={Images[item.image]}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover  shadow"
+                                    />
+                                    {/* Add to Cart button on top-right */}
+                                    <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
+                                        <MdOutlineShoppingCart className="text-gray-800" size={20} />
+
+                                    </button>
+                                </div>
+
+                                {/* Product name */}
+                                <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
+
+                                <div className='flex gap-3'>
+                                    <p className="text-[16px] line-through font-normal text-gray-600">250 Dh</p>
+
+                                    <p className="text-[16px] font-bold text-black-600">{item.price}</p>
+
+                                </div>
+
+                                {/* Optional color dots */}
+
+                            </div>
+                        ))}
+                    </div>
+
 
 
 
@@ -74,6 +110,7 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
+
 
 
 
