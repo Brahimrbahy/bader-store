@@ -2,153 +2,153 @@
   "products": {
     "t-shirt": [
       {
-        "name": "air dry baby tee",
+        "name": "flower girl baby tee",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "tee1"
       },
       {
         "name": "sandy baby tee",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "tee2"
       },
       {
         "name": "studio 54 baby tee",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "tee3"
       },
       {
         "name": "after party baby tee",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "tee4"
       },
       {
         "name": "ALL THAT JAZZ BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "all_that_jazz_baby_tee.jpg"
       },
       {
         "name": "SWEET OR SOUR BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "sweet_or_sour_baby_tee.jpg"
       },
       {
         "name": "STUDIO 54 BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "studio_54_baby_tee.jpg"
       },
       {
         "name": "SHOT OF ESPRESSO BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "shot_of_espresso_baby_tee.jpg"
       },
       {
         "name": "STRAWBERRY FIELDS BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "strawberry_fields_baby_tee.jpg"
       },
       {
         "name": "WILD STRAWBERRY BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "wild_strawberry_baby_tee.jpg"
       },
       {
         "name": "ESPRESSO MARTINI BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "espresso_martini_baby_tee.jpg"
       },
       {
         "name": "THE END BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "the_end_baby_tee.jpg"
       },
       {
         "name": "PUCKER UP BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "pucker_up_baby_tee.jpg"
       }
     ],
     "hoodie": [
       {
-        "name": "DROP TOP GREY HOODIE",
+        "name": "drop top grey hoodie",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• oversized boxy fit • 440GSM medium-heavy fabric • front & back graphic print • jersey lined with kangaroo pouch pocket • super cosy 70% ringspun cotton / 20% polyester / 10% recycled polyester • designed in casablanca by RBIAA",
-        "image": "drop_top_grey_hoodie.jpg"
+        "image": "h1"
       },
       {
-        "name": "SURF'S UP BLUE HOODIE",
+        "name": "surf's up blue hoodie",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• oversized boxy fit • 440GSM medium-heavy fabric • front & back graphic print • jersey lined with kangaroo pouch pocket • super cosy 70% ringspun cotton / 20% polyester / 10% recycled polyester • designed in casablanca by RBIAA",
-        "image": "surfs_up_blue_hoodie.jpg"
+        "image": "h2"
       },
       {
-        "name": "HOWDY BLUE HOODIE",
+        "name": "happy white hoodie",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• oversized boxy fit • 440GSM medium-heavy fabric • front & back graphic print • jersey lined with kangaroo pouch pocket • super cosy 70% ringspun cotton / 20% polyester / 10% recycled polyester • designed in casablanca by RBIAA",
-        "image": "howdy_blue_hoodie.jpg"
+        "image": "h3"
       },
       {
-        "name": "BUTTERFLY BLACK HOODIE",
+        "name": "air dry grey hoodie",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• oversized boxy fit • 440GSM medium-heavy fabric • front & back graphic print • jersey lined with kangaroo pouch pocket • super cosy 70% ringspun cotton / 20% polyester / 10% recycled polyester • designed in casablanca by RBIAA",
-        "image": "butterfly_black_hoodie.jpg"
+        "image": "h4"
       }
     ],
     "new": [
       {
         "name": "WIDE OPEN BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "wide_open_baby_tee.jpg"
       },
       {
         "name": "1960s BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "1960s_baby_tee.jpg"
       },
       {
         "name": "BANANA SPLIT BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "banana_split_baby_tee.jpg"
       },
       {
         "name": "KITTEN BABY TEE",
         "sizes": ["XS", "S", "M", "L", "XL"],
-        "price": "149 DH",
+        "price": "149.00 dh",
         "description": "• the original graphic baby tee • super soft 180gsm 100% cotton • front graphic print • true-to-size • designed in casablanca by RBIAA",
         "image": "kitten_baby_tee.jpg"
       }

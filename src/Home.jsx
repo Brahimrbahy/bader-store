@@ -7,6 +7,8 @@ import { MdOutlineShoppingCart } from 'react-icons/md';
 
 const Home = () => {
     const tshirts = JsonData.products["t-shirt"].slice(0, 4);
+    const hoodie = JsonData.products["hoodie"].slice(0, 4);
+    const newt = JsonData.products["new"].slice(0, 4);
 
     return (
 
@@ -35,15 +37,15 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4  mt-6">
                         {tshirts.map((item, index) => (
                             <div key={index} className="text-center relative">
                                 {/* Image container with fixed width & height */}
-                                <div className="w-full aspect-square relative">
+                                <div className="w-full aspect-square relative mt-4">
                                     <img
                                         src={Images[item.image]}
                                         alt={item.name}
-                                        className="w-full h-full object-cover  shadow"
+                                        className="w-full h-full object-cover  "
                                     />
                                     {/* Add to Cart button on top-right */}
                                     <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
@@ -55,10 +57,10 @@ const Home = () => {
                                 {/* Product name */}
                                 <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
 
-                                <div className='flex gap-3'>
-                                    <p className="text-[16px] line-through font-normal text-gray-600">250 Dh</p>
+                                <div className='flex gap-1'>
+                                    <p className="text-[16px] line-through font-normal text-gray-600">250.00 Dh</p>
 
-                                    <p className="text-[16px] font-bold text-black-600">{item.price}</p>
+                                    <p className="text-[16px] font-normal text-black-600">{item.price}</p>
 
                                 </div>
 
@@ -90,7 +92,38 @@ const Home = () => {
                         </Link>
                     </div>
 
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4  mt-6">
+                        {hoodie.map((item, index) => (
+                            <div key={index} className="text-center relative">
+                                {/* Image container with fixed width & height */}
+                                <div className="w-full aspect-square relative mt-4">
+                                    <img
+                                        src={Images[item.image]}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover  "
+                                    />
+                                    {/* Add to Cart button on top-right */}
+                                    <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
+                                        <MdOutlineShoppingCart className="text-gray-800" size={20} />
 
+                                    </button>
+                                </div>
+
+                                {/* Product name */}
+                                <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
+
+                                <div className='flex gap-1'>
+                                    <p className="text-[16px] line-through font-normal text-gray-600">250.00 Dh</p>
+
+                                    <p className="text-[16px] font-normal text-black-600">{item.price}</p>
+
+                                </div>
+
+                                {/* Optional color dots */}
+
+                            </div>
+                        ))}
+                    </div>
 
 
                 </div>
@@ -110,7 +143,38 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4  mt-6">
+                        {newt.map((item, index) => (
+                            <div key={index} className="text-center relative">
+                                {/* Image container with fixed width & height */}
+                                <div className="w-full aspect-square relative mt-4">
+                                    <img
+                                        src={Images[item.image]}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover  "
+                                    />
+                                    {/* Add to Cart button on top-right */}
+                                    <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
+                                        <MdOutlineShoppingCart className="text-gray-800" size={20} />
 
+                                    </button>
+                                </div>
+
+                                {/* Product name */}
+                                <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
+
+                                <div className='flex gap-1'>
+                                    <p className="text-[16px] line-through font-normal text-gray-600">250.00 Dh</p>
+
+                                    <p className="text-[16px] font-normal text-black-600">{item.price}</p>
+
+                                </div>
+
+                                {/* Optional color dots */}
+
+                            </div>
+                        ))}
+                    </div>
 
 
 
