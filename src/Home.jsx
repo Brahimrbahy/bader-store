@@ -38,51 +38,47 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-  {tshirts.map((item, index) => {
-    const productUrl = `https://yourshop.com/product/${item.id}`;
-    const message = `Hi, I'm interested in this product: ${item.name} - ${item.price}. Check it here: ${productUrl}`;
-    const whatsappUrl = `https://wa.me/212636794596?text=${encodeURIComponent(message)}`;
+                        {tshirts.map((item, index) => {
+                            const productUrl = `https://yourshop.com/product/${item.id}`;
+                            const message = `Hi, I'm interested in this product: ${item.name} - ${item.price}. Check it here: ${productUrl} `;
+                            const whatsappUrl = `https://wa.me/212636794596?text=${encodeURIComponent(message)}`;
 
-    return (
-      <div key={index} className="text-center relative">
-        {/* Image container with fixed width & height */}
-        <div className="w-full aspect-square relative mt-4">
-          <img
-            src={Images[item.image]}
-            alt={item.name}
-            className="w-full h-full object-cover"
-          />
+                            return (
+                                <div key={index} className="text-center relative">
+                                    {/* Image container with fixed width & height */}
+                                    <div className="w-full aspect-square relative mt-4">
+                                        <img
+                                            src={Images[item.image]}
+                                            alt={item.name}
+                                            className="w-full h-full object-cover"
+                                        />
 
-          {/* Add to Cart button */}
-          {/* <button className="absolute bottom-2 right-12 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
-            <MdOutlineShoppingCart className="text-gray-800" size={20} />
-          </button> */}
+                                        {/* Add to Cart button */}
+                                        <a
+                                            href={whatsappUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px]  flex items-center justify-center hover:bg-gray-100"
+                                            aria-label="Send product on WhatsApp"
+                                        >
+                                            <MdOutlineShoppingCart className="text-gray-800" size={20} />
+                                        </a>
 
-          {/* WhatsApp button */}
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-2 right-2 bg-green-500 text-white p-2 w-[36px] h-[36px] flex items-center justify-center rounded-full shadow hover:bg-green-600"
-            aria-label="Share on WhatsApp"
-          >
-            <FaWhatsapp size={20} />
-          </a>
-        </div>
+                                    </div>
 
-        {/* Product name */}
-        <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
+                                    {/* Product name */}
+                                    <h3 className="mt-2 text-start text-[16px] font-normal">{item.name}</h3>
 
-        <div className="flex gap-1">
-          <p className="text-[16px] line-through font-normal text-gray-600">
-            250.00 Dh
-          </p>
-          <p className="text-[16px] font-normal text-black-600">{item.price}</p>
-        </div>
-      </div>
-    );
-  })}
-</div>
+                                    <div className="flex gap-1">
+                                        <p className="text-[16px] line-through font-normal text-gray-600">
+                                            250.00 Dh
+                                        </p>
+                                        <p className="text-[16px] font-normal text-black-600">{item.price}</p>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
 
 
 
