@@ -47,12 +47,14 @@ const Home = () => {
                                 <div key={index} className="text-center relative">
                                     {/* Image container with fixed width & height */}
                                     <div className="w-full aspect-square relative mt-4">
-                                        <img
-                                            src={Images[item.image]}
-                                            alt={item.name}
-                                            className="w-full h-full object-cover"
-                                        />
+                                        <Link to={`/product/${item.id}`}>
+                                            <img
+                                                src={Images[item.image]}
+                                                alt={item.name}
+                                                className="w-full h-full object-cover  "
+                                            />
 
+                                        </Link>
                                         {/* Add to Cart button */}
                                         <a
                                             href={whatsappUrl}
@@ -108,11 +110,15 @@ const Home = () => {
                             <div key={index} className="text-center relative">
                                 {/* Image container with fixed width & height */}
                                 <div className="w-full aspect-square relative mt-4">
-                                    <img
-                                        src={Images[item.image]}
-                                        alt={item.name}
-                                        className="w-full h-full object-cover  "
-                                    />
+                                    <Link to={`/product/${item.id}`}>
+                                        <img
+                                            src={Images[item.image]}
+                                            alt={item.name}
+                                            className="w-full h-full object-cover  "
+                                        />
+
+                                    </Link>
+
                                     {/* Add to Cart button on top-right */}
                                     <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
                                         <MdOutlineShoppingCart className="text-gray-800" size={20} />
@@ -159,11 +165,15 @@ const Home = () => {
                             <div key={index} className="text-center relative">
                                 {/* Image container with fixed width & height */}
                                 <div className="w-full aspect-square relative mt-4">
-                                    <img
-                                        src={Images[item.image]}
-                                        alt={item.name}
-                                        className="w-full h-full object-cover  "
-                                    />
+                                    <Link to={`/product/${item.id}`}>
+                                        <img
+                                            src={Images[item.image]}
+                                            alt={item.name}
+                                            className="w-full h-full object-cover  "
+                                        />
+
+                                    </Link>
+
                                     {/* Add to Cart button on top-right */}
                                     <button className="absolute bottom-2 right-2 bg-white p-2 w-[36px] h-[36px] shadow hover:bg-gray-100">
                                         <MdOutlineShoppingCart className="text-gray-800" size={20} />

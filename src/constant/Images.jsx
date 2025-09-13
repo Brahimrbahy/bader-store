@@ -9,6 +9,10 @@ import h1 from "../assets/images/h1.jpg";
 import h2 from "../assets/images/h2.jpg";
 import h3 from "../assets/images/h3.jpg";
 import h4 from "../assets/images/h4.jpg";
+import n1 from "../assets/images/wide-open-baby-tee.png";
+import n2 from "../assets/images/1960s-baby-tee.png";
+import n3 from "../assets/images/banana-split-baby-tee.png";
+import n4 from "../assets/images/kitten-baby-tee.png";
 
 
-export default  {logo, bg1, bg2, tee1, tee2, tee3, tee4, h1, h2, h3, h4, }
+export default  {logo, bg1, bg2, tee1, tee2, tee3, tee4, h1, h2, h3, h4, n1, n2, n3, n4, }
