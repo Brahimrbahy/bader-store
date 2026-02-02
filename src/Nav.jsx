@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { FiSearch, FiShoppingCart, FiMenu, FiX } from 'react-icons/fi';
-import { LuUserRound } from 'react-icons/lu';
-import { FaInstagram, FaTiktok } from 'react-icons/fa';
-import Images from './constant/Images';
+import { IoMdMenu } from 'react-icons/io';
+import { FiX } from 'react-icons/fi';
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,150 +10,97 @@ const Nav = () => {
     };
 
     return (
-        <>
-            {/* Desktop & Mobile Header */}
-            <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-40 lg:py-3">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-                    <div className="flex items-center justify-between h-[55px]">
-
-                        {/* Mobile Menu + Search */}
-                        <div className="flex gap-3 items-center md:hidden">
-                            <button
-                                onClick={toggleMenu}
-                                className="rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
-                            >
-                                <FiMenu className="h-6 w-6" />
-                            </button>
-
-                            <button className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-200">
-                                <FiSearch className="h-5 w-5" />
-                            </button>
-                        </div>
-
-                        {/* Logo (left) */}
-                        <div className="flex-shrink-0">
-                            <img
-                                src={Images.logo}
-                                alt="Logo"
-                                className="h-[31px] w-auto object-contain md:h-12"
-                            />
-                        </div>
-
-                        {/* Desktop Navigation (center) */}
-                        <div className="hidden md:flex flex-1 justify-center">
-                            <ul className="flex space-x-8">
-                                <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
-                                        NEW ARRIVALS
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
-                                        WOMEN
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
-                                        MEN
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide">
-                                        ACCESSORIES
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Icons (right) */}
-                        <div className="flex items-center gap-2">
-                            {/* Search (desktop only) */}
-                            <button className="hidden md:block p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
-                                <FiSearch className="h-5 w-5" />
-                            </button>
-
-                            {/* User (desktop only) */}
-                            <button className="hidden md:block p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
-                                <LuUserRound className="h-5 w-5" />
-                            </button>
-
-                            {/* Cart (always visible) */}
-                            <button className="p-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md relative">
-                                <FiShoppingCart className="h-5 w-5" />
-                            </button>
-                        </div>
-                    </div>
+        <nav className="
+    fixed top-4 left-1/2 -translate-x-1/2
+    z-50
+    w-[95%] max-w-7xl
+    px-8 py-4
+    bg-white/30 backdrop-blur-lg
+    border border-white/40
+    shadow-lg shadow-black/10
+    rounded-4xl
+">
+            <div className="flex items-center justify-between">
+                {/* Logo */}
+                <div>
+                    <h1 className="text-2xl font-bold text-green-700">
+                        Green Life
+                    </h1>
                 </div>
-            </nav>
 
-            {/* Mobile Menu Overlay */}
-            {isMenuOpen && (
-                <div className="fixed inset-0 z-50 md:hidden">
-                    {/* Background overlay */}
-                    <div
-                        className="fixed inset-0 bg-black/30 transition-opacity duration-300"
-                        onClick={toggleMenu}
-                    ></div>
-
-                    {/* Cancel Button */}
-                    <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-                        <button
-                            onClick={toggleMenu}
-                            className="bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow duration-200"
+                {/* Navigation Links - Desktop */}
+                <ul className="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
+                    {["Accueil", "Votre Secteur", "Nos Projets", "Nos Expertises"].map(item => (
+                        <li
+                            key={item}
+                            className="
+                        relative cursor-pointer
+                        after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                        after:h-[3px] after:w-0 after:bg-green-600
+                        after:transition-all after:duration-500
+                        hover:after:w-full hover:after:left-0
+                    "
                         >
-                            <FiX className="h-6 w-6 text-gray-600" />
-                        </button>
-                    </div>
+                            {item}
+                        </li>
+                    ))}
+                </ul>
 
-                    {/* Menu Panel */}
-                    <div className="fixed inset-x-0 bottom-0 bg-white mx-2 mb-2 shadow-2xl transform transition-transform duration-300 ease-out">
-                        <div className="px-6 py-8">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-3 tracking-wide">
-                                NEW ARRIVALS
-                            </h2>
+                {/* CTA Button */}
+                <div className="hidden md:block">
+                    <button className="
+        relative
+        px-5 py-2
+        rounded-full
+        font-medium
+        text-green-900
+        bg-green-400/30
+        backdrop-blur-lg
+        border border-green-500/40
+        shadow-lg shadow-green-500/20
+        hover:bg-green-500/40
+        hover:shadow-green-500/30
+        transition-all duration-300
+    ">
+                        Travailler chez Atelier Vert
+                    </button>
+                </div>
 
-                            <div className="space-y-6">
-                                {['Women', 'Men', 'Accessories'].map((item) => (
-                                    <div key={item} className="border-b border-gray-100 pb-4">
-                                        <a
-                                            href="#"
-                                            className="flex justify-between items-center text-xl font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
-                                            onClick={toggleMenu}
-                                        >
-                                            <span>{item}</span>
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                ))}
-                            </div>
 
-                            {/* Social Media Icons */}
-                            <div className="flex space-x-6 mt-12 mb-6">
-                                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
-                                    <FaInstagram className="h-6 w-6" />
-                                </a>
-                                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
-                                    <FaTiktok className="h-6 w-6" />
-                                </a>
-                            </div>
+                {/* Mobile Menu Toggle */}
+                <div className="md:hidden">
+                    <button
+                        onClick={toggleMenu}
+                        className="text-green-700 text-3xl"
+                    >
+                        {isMenuOpen ? <FiX /> : <IoMdMenu />}
+                    </button>
+                </div>
+            </div>
 
-                            {/* Account */}
-                            <div className="pt-6 border-t border-gray-100">
-                                <button
-                                    className="text-lg font-medium text-gray-900 hover:text-gray-600 transition-colors duration-200"
-                                    onClick={toggleMenu}
-                                >
-                                    Account
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+                <div className="
+            md:hidden mt-4
+            bg-white/40 backdrop-blur-lg
+            border border-white/30
+            rounded-2xl p-4
+        ">
+                    <ul className="flex flex-col space-y-4 text-gray-800 font-medium">
+                        {["Accueil", "Votre Secteur", "Nos Projets", "Nos Expertises"].map(item => (
+                            <li
+                                key={item}
+                                className="cursor-pointer hover:text-green-600 transition border-b border-white/30 pb-2"
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             )}
-        </>
+        </nav>
+
     );
-};
+}
 
 export default Nav;
